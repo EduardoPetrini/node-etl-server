@@ -10,11 +10,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "prettier": "3.3.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "express": "^4.21.1",
     "kafkajs": "^2.2.4",
     "mongodb": "^6.10.0",
     "mssql": "^11.0.1",
