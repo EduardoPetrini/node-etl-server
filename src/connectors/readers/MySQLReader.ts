@@ -1,10 +1,11 @@
 import { Readable } from "node:stream";
-
+import mysql from 'mysql2';
 import { Reader } from '../../domain/interfaces/reader';
 import { MySQLConfig } from '../interfaces';
 
 export class MySQLConnector implements Reader<MySQLConfig, MySQLConnector> {
-  private connection;
+  private connection: mysql.Connection;
+  
   constructor(config: MySQLConfig) {
     throw new Error('Method not implemented.');
   }

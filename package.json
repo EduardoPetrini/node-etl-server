@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -10,7 +13,10 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "prettier": "3.3.3",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@typescript-eslint/parser": "^8.12.2",
+    "eslint": "^9.13.0",
+    "prettier": "^3.3.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   },
@@ -20,6 +26,6 @@
     "kafkajs": "^2.2.4",
     "mongodb": "^6.10.0",
     "mssql": "^11.0.1",
-    "mysqls": "^1.2.2"
+    "mysql2": "^3.11.3"
   }
 }
